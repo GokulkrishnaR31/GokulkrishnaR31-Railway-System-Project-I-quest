@@ -1,0 +1,783 @@
+body {
+    margin: auto;
+    background: linear-gradient(to right, #e3f2fd, #90caf9);
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    
+}
+
+/* Navigation Styling */
+.navigation {
+    margin: auto;
+    width: 90%;
+    max-width: 900px;
+    padding: 10px;
+    background: linear-gradient(135deg, #2a2ae6b6, #4665f1);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    text-align: center;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navigation ul li {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navigation ul li:hover {
+    transform: scale(1.1);
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(135deg, #ff4081, #ff80ab);
+    padding: 12px 24px;
+    border-radius: 15px;
+    display: block;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+.navigation ul li a:hover {
+    background: linear-gradient(135deg, #ff80ab, #ff4081);
+    color: white;
+}
+.main {
+    margin: auto;
+    width: 100%;
+    max-width: 900px;
+    padding: 20px;
+    border: 2px solid #ff4081;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    min-height: 950px;
+}
+.booking {
+    padding: 20px;
+    border-radius: 12px;
+    width: 300px;
+    float: left;
+    background: rgba(146, 212, 243, 0.962);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.booking:hover {
+    transform: translateY(-5px) scale(1.02);
+}
+
+/* Buttons */
+.submit, .bookh, .bookd, .order {
+    padding: 12px 30px;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 30px;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+.submit {
+    background: linear-gradient(135deg, tomato, #ff7043);
+    color: white;
+}
+
+.submit:hover {
+    background: linear-gradient(135deg, #ff7043, tomato);
+    transform: scale(1.05);
+}
+
+.bookh {
+    background: linear-gradient(135deg, orange, #ffcc80);
+}
+
+.bookd {
+    background: linear-gradient(135deg, lightblue, #80d8ff);
+}
+
+.order {
+    background: linear-gradient(135deg, #66ff66, #00e676);
+}
+.img {
+    width: 550px;
+    height:250px;
+    float: right;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+.img:hover {
+    transform: scale(1.02);
+}
+.imgs{
+	width: 155px;
+	height: 100px;
+	padding: 0px 1px 0px 0px;
+	margin-left: 10px;
+	float: right;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+}
+.head1{
+	
+ margin-left:  30px;
+ font-family: 'Poppins', sans-serif; 
+}
+
+
+.submit{
+	margin-left: 80px;
+	margin-top: 20px;
+	padding: 0px 50px 0px 50px;
+	font-size:large;
+	background-color:tomato ;
+   border-radius: 20px;
+   text-align: center;
+
+}
+.head{
+  margin: 2px;
+  margin-left: 150px;
+  font-family: 'Poppins', sans-serif;
+}
+.holiday{
+	margin-left: 450px;
+	font-family: 'Poppins', sans-serif;
+}
+
+.fsize{
+	font-family: 'Poppins', sans-serif;
+	font-size: x-large;
+}
+/* Holiday Packages Heading */
+.hpack {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #e4e9ef;
+    text-transform: uppercase;
+    padding: 20px;
+    margin-bottom: 30px;
+    background: linear-gradient(135deg,  #6123e7, #4eafe7);
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+/* Package Image */
+.hpimg {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Package Container */
+div {
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+div:hover {
+    transform: scale(1.02);
+}
+
+/* Buttons for Details & Booking */
+.bookd, .bookh {
+    background: linear-gradient(135deg,  #6123e7, #4eafe7);
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.bookd:hover, .bookh:hover {
+    background: linear-gradient(135deg, #4eafe7, #6123e7);
+    transform: scale(1.05);
+}
+table {
+    border: 2px solid blue;
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th {
+    border: 1px solid black;
+    background-color: red;
+    font-weight: bold;
+    padding: 12px;
+    color: white;
+}
+
+td {
+    border: 2px solid black;
+    padding: 15px;
+    font-weight: bold;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+}    
+td:hover{
+    background-color: lightblue;
+}
+tr:hover{
+	background-color: #ff66ff;
+
+}
+.meald{
+width: 600px;
+}
+.order{
+	padding: 10px 10px 10px 10px;
+	width: 200px;
+	background-color:#66ff66;
+	border-radius: 20px;
+}
+.service{
+	padding: 60px 20px 0px 20px;
+	margin-left: 250px;
+	font-family: 'Poppins', sans-serif;
+	
+
+}
+.service1{
+
+	margin-left: 250px;
+	font-family: 'Poppins', sans-serif;
+}
+.service2{
+	border: 2px solid black;
+	width: 600px;
+	padding: 20px;
+	margin-bottom: 10px;
+	margin-left: 110px;
+}
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.89;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+  text-align: center;
+  align-items: center;
+}
+/* Popup Forms */
+.form-popup {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+/* Popup Box */
+.popup {
+    min-width: 500px;
+    min-height: 250px;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+/* Close Buttons */
+.hide {
+    padding: 10px 40px;
+    background: linear-gradient(135deg, #6123e7, #4eafe7);
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.hide:hover {
+    background: linear-gradient(135deg, #4eafe7, #6123e7);
+    transform: scale(1.05);
+}
+
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+/* Form Inputs */
+input[type="input"] {
+    width: 80%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+input[type="input"]:focus {
+    border-color: #ff6b6b;
+    box-shadow: 0 0 5px rgba(255, 107, 107, 0.5);
+}
+@media (max-width: 768px) {
+    .booking {
+        float: none;
+        width: 100%;
+    }
+    .img {
+        width: 100%;
+        height: auto;
+        float: none;
+    }
+    .main {
+        width: 95%;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.head-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Space between logo and heading */
+    padding: 15px;
+    margin-top: 20px;
+}
+/* Stylish Heading */
+.head {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+    background: linear-gradient(135deg, #5506c4, #62bcf1);
+    padding: 10px 20px;
+    border-radius: 8px;    
+ }
+
+/* Adding Glow Effect */
+.head:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(255, 64, 129, 0.5);
+}
+/* Logo Styling */
+.logo {
+    width: 150px;  /* Adjust size */
+    height: 150px; /* Adjust size */
+    border-radius: 50%; /* Make it circular */
+    object-fit: cover; /* Ensure it scales properly */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Smooth Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .head-container {
+        flex-direction: column; /* Stack logo & heading */
+        gap: 10px;
+    }
+    .head {
+        font-size: 28px;
+        padding: 8px 15px;
+    }
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+}
+/* Styling for the Contact Section */
+.heada {
+    max-width: 600px;
+    margin: 50px auto;
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Contact Heading */
+.heada h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2c3e50;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: linear-gradient(135deg, #ff6b6b, #ffcc80);
+    border-radius: 8px;
+    display: inline-block;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Contact Form */
+.heada form {
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Styling Form Fields */
+.heada input[type="text"], 
+.heada input[type="email"], 
+.heada input[type="name"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.heada input[type="text"]:focus, 
+.heada input[type="email"]:focus, 
+.heada input[type="name"]:focus {
+    border-color: #ff6b6b;
+    box-shadow: 0 0 5px rgba(255, 107, 107, 0.5);
+}
+
+/* Gender Section */
+.heada i {
+    font-size: 18px;
+    font-weight: bold;
+    color: #444;
+    display: block;
+    margin-top: 10px;
+}
+
+.heada input[type="radio"] {
+    margin-right: 5px;
+    transform: scale(1.1);
+}
+
+/* Submit Button */
+.open-button {
+    background: linear-gradient(135deg, #ff6b6b, #ffcc80);
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.open-button:hover {
+    background: linear-gradient(135deg, #ffcc80, #ff6b6b);
+    transform: scale(1.05);
+}
+
+/* Popup Styling */
+.form-popup {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+/* Popup Box */
+.popup {
+    min-width: 500px;
+    min-height: 250px;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Close Button */
+.hide {
+    padding: 10px 40px;
+    background: linear-gradient(135deg, #ff6b6b, #ffcc80);
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hide:hover {
+    background: linear-gradient(135deg, #ffcc80, #ff6b6b);
+    transform: scale(1.05);
+}
+
+/* Email Section */
+.heada h1:last-child {
+    font-size: 20px;
+    color: #444;
+    background: none;
+    text-transform: none;
+    box-shadow: none;
+    margin-top: 20px;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .heada {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .popup {
+        min-width: 90%;
+    }
+
+    .heada h1 {
+        font-size: 28px;
+    }
+
+    .open-button, .hide {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+}
+.payment-section, .refund-section {
+    margin-top: 30px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #007bff;
+}
+
+.submit {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: background 0.3s ease-in-out;
+}
+
+.submit:hover {
+    background-color: #0056b3;
+}
+
+.payment-section p strong {
+    color: #ff0000;
+    font-size: 14px;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #6c757d;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.back-button:hover {
+    background-color: #5a6268;
+}
+
+.refund-note {
+    color: #ff0000;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.container {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid #007bff;
+    text-align: center;
+}
+.submit {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: background 0.3s ease-in-out;
+}
+
+.submit:hover {
+    background-color: #0056b3;
+}
+/* Chatbot Button */
+.chatbot-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Chatbot Container */
+.chatbot-container {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Chat Header */
+.chat-header {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    position: relative;
+}
+
+.chat-header button {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Chat Body */
+.chat-body {
+    padding: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Messages */
+.bot-msg, .user-msg {
+    background: #f1f1f1;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 5px 0;
+    width: fit-content;
+    max-width: 80%;
+}
+
+.user-msg {
+    background: #007bff;
+    color: white;
+    align-self: flex-end;
+}
+
+/* Chat Input */
+.chat-input {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.chat-input button {
+    padding: 8px;
+    border: none;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    margin-left: 5px;
+}

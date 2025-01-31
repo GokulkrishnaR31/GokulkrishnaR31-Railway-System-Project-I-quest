@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Refund - Railway Ticket Booking</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Request Refund</h1>
+        <p>Fill in your details to request a refund.</p>
+
+        <label for="ticketNumber"><strong>Ticket Number:</strong></label>
+        <input type="text" id="ticketNumber" placeholder="Enter your Ticket Number" required>
+
+        <label for="refundReason"><strong>Reason for Refund:</strong></label>
+        <select id="refundReason">
+            <option value="cancellation">Ticket Cancellation</option>
+            <option value="trainDelay">Train Delay</option>
+            <option value="wrongBooking">Wrong Booking</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="refundPaymentMethod"><strong>Refund to:</strong></label>
+        <select id="refundPaymentMethod">
+            <option value="original">Original Payment Method</option>
+            <option value="bank">Bank Account</option>
+            <option value="wallet">E-Wallet</option>
+        </select>
+
+        <button class="submit" onclick="submitRefund()">Submit Refund Request</button>
+        <a href="index.html" class="back-button">Back to Home</a>
+
+        <p class="refund-note"><strong>Note:</strong> Refunds will be processed within 5-7 working days after verification.</p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

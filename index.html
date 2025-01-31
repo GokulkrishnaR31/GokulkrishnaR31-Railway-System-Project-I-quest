@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Railway Ticket Booking</title>
+        <link rel="stylesheet" href="index.css"/>
+        
+        <style>
+            .scroll-text {
+                background-color: #2737ea66;
+                color: #333;
+                font-size: 18px;
+                padding: 10px 0;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+
+            .scroll-text span {
+                display: inline-block;
+                padding-left: 100%;
+                animation: scroll 12s linear infinite;
+            }
+
+            @keyframes scroll {
+                from {
+                    transform: translateX(100%);
+                }
+                to {
+                    transform: translateX(-100%);
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="main">
+            <div class="head-container">
+                <img src="Train logo.webp" alt="Logo" class="logo">
+                <div class="head">Railway Ticket Reservation System</div>
+            </div>
+            
+            <div class="navigation">
+                <ul>
+                    <li><a href="index.html" id="onlink">HOME</a></li>
+                    <li><a href="meal.html">MEALS</a></li>
+                    <li><a href="holiday.html">H PACKAGES</a></li>
+                    <li><a href="service.html">SERVICE</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="payment.html">Make Payment</a></li>
+                    <li><a href="refund.html">Request Refund</a></li>
+                </ul>
+            </div>
+            <div class="scroll-text">
+              <span>Welcome to the Railway Ticket Reservation System! Book your tickets safely and conveniently. Check PNR & Train Status now!</span>
+          </div>
+            <div class="booking">
+                <section>
+                    <h2 class="head1">Book Your Tickets Here</h2>
+                    
+                    <form>
+                        <ul>
+                            <b class="fsize">From &emsp;<input type="text" id="fromStation" placeholder="From [STN Code]"></b> <br><br>
+                            <b class="fsize">To &emsp;<input type="text" id="toStation" placeholder="To [STN Code]"></b> <br><br>
+                            <b class="fsize">Date &emsp;<input type="Date"></b> <br><br>
+                            <label class="fsize"><strong>Class</strong></label>
+                            <select id="class" name="class">
+                                <option value="select">SELECT</option>
+                                <option value="1AC">1AC</option>
+                                <option value="2AC">2AC</option>
+                                <option value="3AC">3AC</option>
+                                <option value="Sleeper">Sleeper</option>
+                                <option value="Chair">Chair</option> <br>
+                            </select>
+                        </ul>
+                    </form>
+
+                    <button class="submit" type="button" onclick="trainB()">Find Trains</button>
+                    <button class="submit" type="button" onclick="checkPNR()">Check PNR</button>
+                    <button class="submit" type="button" onclick="trackTrain()">Live Train Status</button>
+
+                    <div class="form-popup" id="bookTrain">
+                        <div class="popup">
+                            <h1>Booking opens 120 days in advance. Plan your journey now!</h1> <br>
+                            <button type="button" class="hide" onclick="trainC()">Close</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <h2 class="offers">Limited Time Offer: 10% Off on AC Tickets!</h2>
+            
+            <img class="img" src="home.jpg" alt="train" width="500" height="350" align="center" />
+            
+            <h1 class="holiday">HOLIDAYS</h1>
+            <img class="imgs" src="taj.jpg" alt="Taj Mahal"/>
+            <img class="imgs" src="temple.jpg" alt="Golden Temple"/>
+            <img class="imgs" src="tower.jpg" alt="Eiffel Tower"/>
+        </div>
+       
+        <script src="main.js"></script>
+        <script>
+            function checkPNR() {
+                alert('PNR Status feature coming soon!');
+            }
+
+            function trackTrain() {
+                alert('Live Train Status feature coming soon!');
+            }
+            // Payment Function
+function proceedPayment() {
+    let paymentMethod = document.getElementById("paymentMethod").value;
+    let amount = document.getElementById("amount").value;
+
+    if (amount.trim() === "" || amount <= 0) {
+        alert("Please enter a valid amount!");
+        return;
+    }
+
+    alert(`Payment Successful!\nAmount: ₹${amount}\nPayment Method: ${paymentMethod}`);
+}
+
+// Refund Function
+function submitRefund() {
+    let ticketNumber = document.getElementById("ticketNumber").value;
+    let refundReason = document.getElementById("refundReason").value;
+    let refundPaymentMethod = document.getElementById("refundPaymentMethod").value;
+
+    if (ticketNumber.trim() === "") {
+        alert("Please enter a valid Ticket Number!");
+        return;
+    }
+
+    alert(`Refund Request Submitted!\nTicket Number: ${ticketNumber}\nReason: ${refundReason}\nRefund to: ${refundPaymentMethod}\nProcessing time: 5-7 days.`);
+}
+// Function to Toggle Chatbot Visibility
+function toggleChat() {
+    var chatBox = document.getElementById("chatbot");
+    if (chatBox.style.display === "block") {
+        chatBox.style.display = "none";
+    } else {
+        chatBox.style.display = "block";
+    }
+}
+
+// Function to Send User Message
+function sendMessage() {
+    var inputField = document.getElementById("chat-input");
+    var message = inputField.value.trim();
+    if (message === "") return;
+
+    var chatBody = document.getElementById("chat-body");
+
+    // Display User Message
+    var userMessage = document.createElement("p");
+    userMessage.className = "user-msg";
+    userMessage.innerText = message;
+    chatBody.appendChild(userMessage);
+
+    inputField.value = "";
+
+    // Generate Bot Response
+    setTimeout(() => {
+        var botResponse = getBotResponse(message);
+        var botMessage = document.createElement("p");
+        botMessage.className = "bot-msg";
+        botMessage.innerText = botResponse;
+        chatBody.appendChild(botMessage);
+
+        chatBody.scrollTop = chatBody.scrollHeight;
+    }, 500);
+}
+
+// Handle Enter Key Press in Input
+function handleKeyPress(event) {
+    if (event.key === "Enter") {
+        sendMessage();
+    }
+}
+
+// Function to Generate Simple Responses
+function getBotResponse(input) {
+    input = input.toLowerCase();
+
+    if (input.includes("hello") || input.includes("hi")) {
+        return "Hello! How can I help you today?";
+    } else if (input.includes("book ticket")) {
+        return "You can book tickets from the 'HOME' section.";
+    } else if (input.includes("wheelchair")) {
+        return "You can book a wheelchair under 'Service at Station'.";
+    } else if (input.includes("stay rooms")) {
+        return "Stay rooms can be booked for ₹1000 per 24 hours.";
+    } else {
+        return "I'm sorry, I don't understand. Please ask something else!";
+    }
+}
+
+        </script>
+    </body>
+</html>

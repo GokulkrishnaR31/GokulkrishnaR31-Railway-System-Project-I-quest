@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment - Railway Ticket Booking</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Make Payment</h1>
+        <p>Choose your preferred payment method and proceed.</p>
+
+        <label for="paymentMethod"><strong>Payment Method:</strong></label>
+        <select id="paymentMethod">
+            <option value="credit">Credit Card</option>
+            <option value="debit">Debit Card</option>
+            <option value="upi">UPI</option>
+            <option value="netbanking">Net Banking</option>
+            <option value="wallet">E-Wallet</option>
+        </select>
+
+        <label for="amount"><strong>Amount (₹):</strong></label>
+        <input type="number" id="amount" placeholder="Enter Amount" required>
+
+        <button class="submit" onclick="proceedPayment()">Proceed to Pay</button>
+        <a href="index.html" class="back-button">Back to Home</a>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
